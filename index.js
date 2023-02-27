@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true, limit: "30mb" }));
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("APP IS RUNNING!");
+  res.send("APP IS RUNNING!!!");
 });
 
 const codeSnippetSchema = new mongoose.Schema({
