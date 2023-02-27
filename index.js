@@ -143,6 +143,7 @@ app.post("/code-snippet/update/:id", async (req, res) => {
       updatedAt: new Date(),
     };
     const result = await CodeSnippet.findByIdAndUpdate(id, updatedValue);
+    console.log("test")
     res.json({ result });
   } catch (error) {
     res.json({ error });
